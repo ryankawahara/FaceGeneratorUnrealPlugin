@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-pluginTest2.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\ryryk\Documents\Unreal Projects\MyProject5\Intermediate\Build\Win64\x64\MyProject5Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\Users\ryryk\Documents\Unreal Projects\MyProject5\Plugins\pluginTest2\Intermediate\Build\Win64\x64\UnrealEditor\Development\pluginTest2\Module.pluginTest2.cpp.obj"
+"C:\Users\ryryk\Documents\Unreal Projects\MyProject5\Plugins\pluginTest2\Intermediate\Build\Win64\x64\UnrealEditor\Development\pluginTest2\Default.rc2.res"
+/OUT:"C:\Users\ryryk\Documents\Unreal Projects\MyProject5\Plugins\pluginTest2\Intermediate\Build\Win64\x64\UnrealEditor\Development\pluginTest2\UnrealEditor-pluginTest2.lib"
