@@ -9,6 +9,9 @@
 #include "Widgets/Text/STextBlock.h"
 #include "ToolMenus.h"
 #include "EditorFramework/AssetImportData.h"
+#include "Engine/Engine.h"
+#include <filesystem>
+
 
 static const FName pluginTest2TabName("pluginTest2");
 
@@ -113,6 +116,26 @@ FReply FpluginTest2Module::HelloWorldButtonClicked()
 			//FString MeshName = SelectedMesh->GetPathName();
 			FString MeshName = SelectedMesh->AssetImportData->GetFirstFilename();
 			UE_LOG(LogTemp, Warning, TEXT("Selected Mesh Name: %s"), *MeshName);
+			std::filesystem::path filePath = std::filesystem::current_path();
+			std::filesystem::path directory = filePath.parent_path();
+			// Replace "other_file.txt" with the name of the different file
+			std::filesystem::path differentFile("testScript.py");
+
+			// Append the different file's name to the directory path
+			std::filesystem::path combinedPath = directory / differentFile;
+
+			// Convert the combined path to a string and print it
+			std::string combinedPathStr = combinedPath.string();
+			FString testCommand = FString(combinedPathStr.c_str());
+			UE_LOG(LogTemp, Warning, TEXT("Execute: %s"), *testCommand);
+
+			FString command = FString(("py " + combinedPathStr).c_str());
+
+
+			GEngine->Exec(NULL, *command);
+
+
+
 		}
 		else
 		{
