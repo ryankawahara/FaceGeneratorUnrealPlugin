@@ -110,7 +110,7 @@ FReply FpluginTest2Module::HelloWorldButtonClicked()
 
 	if (CustomSettingsObject)
 	{
-		UStaticMesh* SelectedMesh = CustomSettingsObject->CustomMesh;
+		UTexture2D* SelectedMesh = CustomSettingsObject->InputFaceImage;
 		if (SelectedMesh)
 		{
 			//FString MeshName = SelectedMesh->GetPathName();
@@ -129,7 +129,7 @@ FReply FpluginTest2Module::HelloWorldButtonClicked()
 			FString testCommand = FString(combinedPathStr.c_str());
 			UE_LOG(LogTemp, Warning, TEXT("Execute: %s"), *testCommand);
 
-			FString command = FString(("py " + combinedPathStr).c_str());
+			FString command = FString(("py " + combinedPathStr).c_str()) + FString(" --inputImage ") + MeshName;
 
 
 			GEngine->Exec(NULL, *command);

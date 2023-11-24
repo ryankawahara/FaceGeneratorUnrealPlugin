@@ -10,7 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCustomSettings() {}
 // Cross Module References
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	PLUGINTEST2_API UClass* Z_Construct_UClass_UCustomSettings();
 	PLUGINTEST2_API UClass* Z_Construct_UClass_UCustomSettings_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_pluginTest2();
@@ -112,9 +112,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomSettings() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CustomMesh_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_InputFaceImage_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_CustomMesh;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_InputFaceImage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -135,14 +135,14 @@ void EmptyLinkFunctionForGeneratedCodeCustomSettings() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCustomSettings_Statics::NewProp_CustomMesh_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCustomSettings_Statics::NewProp_InputFaceImage_MetaData[] = {
 		{ "Category", "Custom Settings" },
 		{ "ModuleRelativePath", "Public/CustomSettings.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCustomSettings_Statics::NewProp_CustomMesh = { "CustomMesh", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UCustomSettings, CustomMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCustomSettings_Statics::NewProp_CustomMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCustomSettings_Statics::NewProp_CustomMesh_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCustomSettings_Statics::NewProp_InputFaceImage = { "InputFaceImage", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UCustomSettings, InputFaceImage), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCustomSettings_Statics::NewProp_InputFaceImage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCustomSettings_Statics::NewProp_InputFaceImage_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCustomSettings_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomSettings_Statics::NewProp_CustomMesh,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCustomSettings_Statics::NewProp_InputFaceImage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UCustomSettings_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UCustomSettings>::IsAbstract,
@@ -182,9 +182,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomSettings() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ryryk_Documents_Unreal_Projects_MyProject5_Plugins_pluginTest2_Source_pluginTest2_Public_CustomSettings_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UCustomSettings, UCustomSettings::StaticClass, TEXT("UCustomSettings"), &Z_Registration_Info_UClass_UCustomSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomSettings), 1787275911U) },
+		{ Z_Construct_UClass_UCustomSettings, UCustomSettings::StaticClass, TEXT("UCustomSettings"), &Z_Registration_Info_UClass_UCustomSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomSettings), 1375945001U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ryryk_Documents_Unreal_Projects_MyProject5_Plugins_pluginTest2_Source_pluginTest2_Public_CustomSettings_h_2635766582(TEXT("/Script/pluginTest2"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_ryryk_Documents_Unreal_Projects_MyProject5_Plugins_pluginTest2_Source_pluginTest2_Public_CustomSettings_h_2979381612(TEXT("/Script/pluginTest2"),
 		Z_CompiledInDeferFile_FID_Users_ryryk_Documents_Unreal_Projects_MyProject5_Plugins_pluginTest2_Source_pluginTest2_Public_CustomSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_ryryk_Documents_Unreal_Projects_MyProject5_Plugins_pluginTest2_Source_pluginTest2_Public_CustomSettings_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

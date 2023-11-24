@@ -13,7 +13,7 @@ class PLUGINTEST2_API UCustomSettings : public UObject
 public:
 
     UPROPERTY(EditAnywhere, Category = "Custom Settings")
-    UStaticMesh* CustomMesh;
+    UTexture2D* InputFaceImage;
 
 //    UPROPERTY(EditAnywhere, Category = "Custom Settings")
 //    float CustomFloat;
